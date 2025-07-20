@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HYDRA</title>
+    <link rel="icon" href="./public/logo.png" type="image/png+xml" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body
+    class="p-6 overflow-x-hidden bg-[radial-gradient(#9488cc,#211E2E)] text-white"
+  >
+    <header class="flex justify-between items-center p-4 md:p-6">
+      <div class="logo flex items-center gap-3">
+        <img
+          src="./public/logo.png"
+          class="w-16 md:w-24 animation-rotate"
+          alt="logo"
+        />
+        <h1
+          class="text-2xl md:text-4xl font-light tracking-tighter bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] bg-clip-text text-transparent"
+        >
+          HYDRA
+        </h1>
+      </div>
+      <button class="md:hidden text-[#8176AF]" id="mobile-menu-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+
+      <nav class="hidden md:block">
+        <ul class="flex gap-4 lg:gap-10 text-sm lg:text-base">
+          <li><a href="#" class="hover:text-[#8176AF] transition">About</a></li>
+          <li>
+            <a href="#" class="hover:text-[#8176AF] transition">Services</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#8176AF] transition">Technologies</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#8176AF] transition">How To</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="btn hidden md:flex gap-4 lg:gap-8">
+        <button
+          class="btn-primary px-4 py-2 text-sm lg:px-6 lg:py-2 lg:text-base"
+        >
+          Contact Us
+        </button>
+        <button
+          class="btn-second px-4 py-2 text-sm lg:px-6 lg:py-2 lg:text-base"
+        >
+          Join Hydra
+        </button>
+      </div>
+      <!-- Mobile Menu (Hidden by default) -->
+      <div
+        class="mobile-menu hidden absolute transition top-28 left-0 right-0 bg-white shadow-lg py-4 px-6 z-50 text-black"
+        id="mobile-menu"
+      >
+        <nav>
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a href="#" class="block py-2 hover:text-[#C0B7E8]">About</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 hover:text-[#C0B7E8]">Services</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 hover:text-[#C0B7E8]"
+                >Technologies</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 hover:text-[#C0B7E8]">How To</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex flex-col gap-3 mt-4">
+          <button class="btn-primary w-full py-2">Contact Us</button>
+          <button class="btn-second w-full py-2">Join Hydra</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- hero section -->
+        <section class="my-3">
+          <div class="container p-4 md:p-6">
+            <div class="up flex justify-between items-center flex-wrap gap-5">
+              <div
+                class="-order-none flex items-center justify-center left md:order-1 w-82 h-72 bg-black/30 rounded-[10%] rounded-bl-[40%]"
+              >
+                <img
+                  src="./public/line 1.png"
+                  class="absolute opacity-80 -z-40 translate-y-14 translate-x-9"
+                  alt=""
+                />
+                <img
+                  src="./public/line 2.png"
+                  class="absolute opacity-80 -z-40 translate-y-14 translate-x-9"
+                  alt=""
+                />
+                <img
+                  src="./public/line 3.png"
+                  class="absolute opacity-80 -z-40 translate-y-14 translate-x-9"
+                  alt=""
+                />
+                <img
+                  src="./public/img 1.png"
+                  class="w-72 rounded-[10%] rounded-bl-[40%]"
+                  alt=""
+                />
+              </div>
+
+              <div class="right flex flex-col gap-8">
+                <img src="./public/line 4.png" class="absolute -z-40" alt="" />
+                <h3 class="text-5xl">
+                  <span
+                    class="bg-gradient-to-r from-[#C0B7E8] to-[#8176AF] bg-clip-text text-transparent"
+                    >Dive</span
+                  >
+                  Into The Depths <br />
+                  Of
+                  <span
+                    class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] bg-clip-text text-transparent"
+                    >Virtual Reality</span
+                  >
+                </h3>
+                <p class="w-96">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore nisl
+                  tincidunt eget. Lectus mauris eros in vitae .
+                </p>
+
+                <div class="flex gap-5">
+                  <button class="btn-second w-52 py-2">BUILD YOUR WORLD</button>
+
+                  <img src="./public/shape1.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="down my-3 text-white">
+              <ul
+                class="bg-[radial-gradient(#9488cc,#211E2E)] flex flex-col md:flex-row justify-between items-center rounded-l md:rounded-full p-1 px-4 md:px-9"
+              >
+                <!-- Visit Item -->
+                <li class="w-full md:w-auto py-3 md:py-0">
+                  <a href="#" class="flex items-center justify-start gap-2">
+                    <img src="./public/Combined-Shape.png" class="w-9" alt="" />
+                    <div>
+                      <h3 class="text-lg">Pay Us a Visit</h3>
+                      <p class="text-sm">
+                        Union St, Seattle, WA 98101, United States
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Divider - Hidden on mobile, vertical on desktop -->
+                <img
+                  src="./public/line 7.png"
+                  class="hidden md:block h-36 rounded"
+                  alt=""
+                />
+                <div class="md:hidden w-full h-px bg-white/20 my-1"></div>
+
+                <!-- Call Item -->
+                <li class="w-full md:w-auto py-3 md:py-0">
+                  <a href="#" class="flex items-center justify-start gap-2">
+                    <img src="./public/shape.png" class="w-10" alt="" />
+                    <div>
+                      <h3 class="text-lg">Give Us a Call</h3>
+                      <p class="text-sm">(110) 1111-1010</p>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Divider - Hidden on mobile, vertical on desktop -->
+                <img
+                  src="./public/line 7.png"
+                  class="hidden md:block h-36 rounded"
+                  alt=""
+                />
+                <div class="md:hidden w-full h-px bg-white/20 my-1"></div>
+
+                <!-- Email Item -->
+                <li class="w-full md:w-auto py-3 md:py-0">
+                  <a href="#" class="flex items-center justify-start gap-2">
+                    <img src="./public/shape-email.png" class="w-10" alt="" />
+                    <div>
+                      <h3 class="text-lg">Send Us a Message</h3>
+                      <p class="text-sm">contact@example.com</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- About section -->
+        <section class="my-3">
+          <div class="container p-4 md:p-6">
+            <div
+              class="title w-full flex flex-wrap items-start justify-between gap-5"
+            >
+              <div class="left">
+                <h2 class="text-3xl font-semibold">INTRODUCTION</h2>
+                <h4 class="flex items-center h-7 gap-5 text-xl">
+                  TO HYDRA VR
+                  <img class="hidden md:inline" src="./public/row.png" alt="" />
+                </h4>
+              </div>
+              <p class="right w-full md:w-1/2">
+                Vitae sapien pellentesque habitant morbi tristique senectus et
+                netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+                lectus. Mi sit amet mauris commodo quis imperdiet massa
+                tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                lectus sit amet est placerat in. Lectus magna fringilla urna
+                porttitor rhoncus vitae.
+              </p>
+            </div>
+
+            <div
+              class="about flex text-center justify-between flex-wrap items-center my-10"
+            >
+              <figure class="w-72 mx-5">
+                <img
+                  src="./public/Vector 18.png"
+                  class="absolute -z-3"
+                  alt=""
+                />
+                <img
+                  src="./public/Vector 19.png"
+                  class="absolute -z-3"
+                  alt=""
+                />
+                <img
+                  class="w-72 rounded-[5%] rounded-tl-[30%] rounded-br-[30%]"
+                  src="./public/img 2.png"
+                  alt=""
+                />
+              </figure>
+              <div
+                class="left justify-center items-center flex flex-col md:w-1/2"
+              >
+                <h3 class="text-3xl font-semibold">ABOUT</h3>
+                <h4 class="text-2xl font-light">HYDRA VR</h4>
+                <p class="my-3">
+                  Eget mi proin sed libero enim sed faucibus turpis. Nisl
+                  rhoncus mattis rhoncus urna neque viverra justo. Vivamus at
+                  augue eget arcu dictum. Ultrices gravida dictum fusce ut
+                  placerat orci. Aenean et tortor at risus viverra adipiscing at
+                  in. Mattis aliquam faucibus purus in massa. Est placerat in
+                  egestas erat imperdiet sed. Consequat semper viverra nam
+                  libero justo laoreet sit amet. Aliquam etiam erat velit
+                  scelerisque in dictum non consectetur a. Laoreet sit amet
+                  cursus sit amet. Vel eros donec ac odio tempor orci dapibus.
+                  Sem nulla pha retra diam sit amet nisl suscipit adipiscing
+                  bibendum. Leo a diam sollicitudi n tempor.
+                </p>
+                <button class="btn-second w-64 p-3">LET’S GET IN TOUCH</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--  -->
+        <section class="my-3">
+          <div class="container p-4 md:p-6">
+              
+          </div>
+        </section>
+
+
+
+      </article>
+    </main>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

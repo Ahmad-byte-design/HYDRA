@@ -1,0 +1,48 @@
+.btn-primary{
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: linear-gradient(to right , #8176AF , #C0B7E8 );
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+
+
+/* 
+===========================================
+===========   HOVER  ===================
+===========================================
+*/
+
+.btn-second:hover{
+    background: linear-gradient(to right , #39305a , #887cbd );
+    box-shadow: 0px 5px 5px #8176af93; 
+}
+
+
+/* 
+===========================================
+===========   ANIMATION ===================
+===========================================
+*/
+
+.animation-rotate {
+    animation: rotate-animation 3s infinite linear alternate;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
