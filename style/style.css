@@ -13,7 +13,10 @@
     cursor: pointer;
 }
 
-
+.gradient{
+    
+    background: linear-gradient(to right , #8176AF , #C0B7E8 ) 20% , #C0B7E8 80% linear-gradient(to left , #8176AF , #C0B7E8 );
+}
 
 /* 
 ===========================================
